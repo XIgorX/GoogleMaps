@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.viewController(_:didAutocompleteWith:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "origin">
+            </PersistentString>
+            <PersistentString
+               value = "destination">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
