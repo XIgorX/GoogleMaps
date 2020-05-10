@@ -48,7 +48,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
-            //locationManager.startMonitoringSignificantLocationChanges()
         }
         else
         {
@@ -117,10 +116,9 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
         
         let originString = "\(origin.latitude),\(origin.longitude)"
         let destinationString = "\(destination.latitude),\(destination.longitude)"
-        
-        let key = AppDelegate.key
+
         let mode = "driving"
-        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(originString)&destination=\(destinationString)&mode=\(mode)&key=\(key)"
+        let url = "\(directionsUrl)/json?origin=\(originString)&destination=\(destinationString)&mode=\(mode)&key=\(key)"
         
         //Rrequesting Alamofire and SwiftyJSON
         Alamofire.request(url).responseJSON { response in
@@ -177,7 +175,6 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
         // Handle the error
-        //print("Error: ", error.localizedDescription)
         showAlertWith(message: error.localizedDescription)
     }
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
