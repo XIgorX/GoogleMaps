@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		59040C472413F670006E581A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59040C462413F670006E581A /* Assets.xcassets */; };
 		59040C4A2413F670006E581A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59040C482413F670006E581A /* LaunchScreen.storyboard */; };
 		59040C552413F670006E581A /* GoogleMapsAPISampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59040C542413F670006E581A /* GoogleMapsAPISampleTests.swift */; };
+		59E1050D24681D6A00DC4065 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1050C24681D6A00DC4065 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		59040C502413F670006E581A /* GoogleMapsAPISampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMapsAPISampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59040C542413F670006E581A /* GoogleMapsAPISampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsAPISampleTests.swift; sourceTree = "<group>"; };
 		59040C562413F670006E581A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E1050C24681D6A00DC4065 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		59040C3E2413F66D006E581A /* GoogleMapsAPISample */ = {
 			isa = PBXGroup;
 			children = (
+				59E1050C24681D6A00DC4065 /* Constants.swift */,
 				59040C3F2413F66D006E581A /* AppDelegate.swift */,
 				59040C412413F66D006E581A /* ViewController.swift */,
 				59040C432413F66D006E581A /* Main.storyboard */,
@@ -117,7 +120,6 @@
 				09B88E9988E7397DD6CCC81B /* Pods-GoogleMapsAPISample.debug.xcconfig */,
 				408982C9E5B1AA0C5156EF7A /* Pods-GoogleMapsAPISample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -286,6 +288,7 @@
 			files = (
 				59040C422413F66D006E581A /* ViewController.swift in Sources */,
 				59040C402413F66D006E581A /* AppDelegate.swift in Sources */,
+				59E1050D24681D6A00DC4065 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
